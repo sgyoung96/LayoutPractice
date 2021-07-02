@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BottomSheetDialogRounded" parent="@style/ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetRounded</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.7</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+
+    <style name="BottomSheetRounded" parent="Widget.MaterialComponents.BottomSheet">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceBottomSheetDialogRounded</item>
+    </style>
+
+    <style name="ShapeAppearanceBottomSheetDialogRounded" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">12dp</item>
+        <item name="cornerSizeTopLeft">12dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+    </style>
+
+</resources>
