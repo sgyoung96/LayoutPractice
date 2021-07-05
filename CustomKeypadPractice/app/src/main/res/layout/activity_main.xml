@@ -11,20 +11,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="custom key pad test"
-        android:layout_marginTop="100dp"
+        android:editable="false"
+        android:cursorVisible="false"
         android:layout_marginStart="50dp"
         android:layout_marginEnd="50dp"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/include_numpad"
         />
 
-    <TextView
+    <include
+        android:id="@+id/include_numpad"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="여기를 눌러 키패드를 띄운 후 입력을 받아요"
-        android:textSize="9dp"
-        android:layout_marginStart="55dp"
-        android:layout_marginEnd="50dp"
-        app:layout_constraintTop_toBottomOf="@id/et_numpad_input"
+        layout="@layout/layout_custom_num_keypad"
+        app:layout_constraintBottom_toBottomOf="parent"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

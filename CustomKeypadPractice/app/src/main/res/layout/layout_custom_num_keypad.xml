@@ -9,7 +9,7 @@
         android:id="@+id/vg_num_keypad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:constraint_referenced_ids="num1,num2,num3,num4,num5,num6,num7,num8,num9,num0,iv_num_delete"
+        app:constraint_referenced_ids="num1,num2,num3,num4,num5,num6,num7,num8,num9,num0"
         />
 
     <com.google.android.material.button.MaterialButton
@@ -121,16 +121,15 @@
         />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/num_blank"
+        android:id="@+id/num_clear"
         android:layout_width="0dp"
         android:layout_height="56dp"
-        android:text=""
-        android:textColor="@color/black"
         android:background="#00000000"
-        app:layout_constraintTop_toBottomOf="@id/num7"
-        app:layout_constraintStart_toStartOf="parent"
+        android:text="AC"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toStartOf="@id/num0"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/num7" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/num0"
@@ -140,7 +139,7 @@
         android:textColor="@color/black"
         android:background="#00000000"
         app:layout_constraintTop_toBottomOf="@id/num8"
-        app:layout_constraintStart_toEndOf="@id/num_blank"
+        app:layout_constraintStart_toEndOf="@id/num_clear"
         app:layout_constraintEnd_toStartOf="@id/iv_num_delete"
         />
 
