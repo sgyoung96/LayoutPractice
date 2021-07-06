@@ -37,6 +37,7 @@ class MainActivity : AppCompatActivity(), CommonBottomDialog.FragmentListener {
         when (nBottomSheetMode) {
             1 -> {
                 Toast.makeText(this, "1 번!!!", Toast.LENGTH_SHORT).show()
+                // view?.findViewById<View>(R.id.~).setOnClickListener {  }
             }
             2 -> {
                 Toast.makeText(this, "2 번!!!", Toast.LENGTH_SHORT).show()
@@ -48,13 +49,11 @@ class MainActivity : AppCompatActivity(), CommonBottomDialog.FragmentListener {
     }
 
     fun showBottomSheet() {
-
         when (nBottomSheetMode) {
             1 -> callDialog(R.layout.bottom_sheet_1)
             2 -> callDialog(R.layout.bottom_sheet_2)
             3 -> callDialog(R.layout.bottom_sheet_3)
         }
-
     }
 
     fun callDialog(screenId: Int) {
