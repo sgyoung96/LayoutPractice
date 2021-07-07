@@ -14,7 +14,7 @@ class MainViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
         text.text = data.text
     }
 
-    // TODO : 애니메이션 처리 어떻게 하는지 모르겠다...
+    // 애니메이션 처리 어떻게 하는지 모르겠다...
 //    fun selectedItem(card: NewCard, selected: Boolean) {
 //        itemBinding.llSubMenu?.apply {
 //            changeVisibility(this, newCard.isSelect)
