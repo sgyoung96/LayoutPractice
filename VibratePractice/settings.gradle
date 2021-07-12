@@ -1,0 +1,2 @@
+rootProject.name = "VibratePractice"
+include ':app'
